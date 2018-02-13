@@ -12,15 +12,20 @@
 			var num = document.getElementById("n3");
 			num.value = sine(num.value);
 		}
+		function fourth() {
+			var num = document.getElementById("n2");
+			num.value = Math.pow(num.value, 4);
+		}
 	</script>
 </head>
 <body>
 	<h1>Calculadora de Ramón Luque</h1>
-	Number:
-	<input type="text" id="n1">
-	<input type="text" id="n3">
+	Number x^3:	<input type="text" id="n1">
+	Number x^4:	<input type="text" id="n2">
+	Number sin(x): <input type="text" id="n3">
 	<p>
 		<button onclick="cube()"> x^3 </button>
+		<button onclick="fourth()"> x^4 </button>
 		<button onclick="sine()"> sine </button>
 	</body>
 	</html>
